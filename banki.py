@@ -13,6 +13,7 @@ class Account():
         if money > self.balance:
             print(f"Недостаточно средств на счете")
         elif money <= self.balance:
+            self.balance -= money
             print(f"Вы успешно сняли {money} рублей. Остаток на счете:{self.balance}")
 
     def all_balance(self):
